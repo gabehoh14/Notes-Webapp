@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <link rel = "stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <div class = "container">
+        <h1><img src ="{% static 'images/notes.png/' %}">Notes</h1>
+        <button class="btn"><img src ="{% static 'images/edit.png/' %}">Create Notes</button>
+        <div class="notes-container">
+            <!-- <p contenteditable="true" class="input-box">
+                <img src = "{% static 'images/delete.png/' %}">
+            </p>  -->
+        </div>
+    </div>
+<script src = "{% static 'script.js' %}"></script>
+</body>
+</html>
