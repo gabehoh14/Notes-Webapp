@@ -42,3 +42,20 @@ document.addEventListener("keydown", event => {
         event.preventDefault();       
     }
 })
+
+window.onload = function() {
+    const colorSelector = document.getElementById('bg-color');
+    
+    const savedGradient = localStorage.getItem('bgGradient');
+    if (savedGradient) {
+        document.body.style.background = savedGradient;
+        colorSelector.value = savedGradient;
+    }
+
+    colorSelector.addEventListener('change', function() {
+        const selectedGradient = this.value;
+        console.log("Selected background gradient:", selectedGradient);
+        document.body.style.background = selectedGradient;
+        localStorage.setItem('bgGradient', selectedGradient);
+    });
+};

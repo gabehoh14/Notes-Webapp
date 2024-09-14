@@ -8,7 +8,6 @@
 .container{
     width:100%;
     min-height: 100vh;
-    background: linear-gradient(135deg, #6cd0dd, #95c0ff);
     color: #fff;
     padding-top: 4%;
     padding-left: 10%;
@@ -70,4 +69,29 @@
     bottom: 15px;
     right: 15px;
     cursor: pointer;
+}
+
+.color-selector {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.color-selector label {
+    font-size: 16px;
+    color: #333;
+}
+
+.color-selector select {
+    padding: 5px;
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+body {
+    background: linear-gradient(135deg, #6cd0dd, #95c0ff); 
 }

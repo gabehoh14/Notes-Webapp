@@ -9,6 +9,17 @@
 </head>
 <body>
     <div class = "container">
+        <div class="color-selector">
+            <label for="bg-color">Choose background color:</label>
+            <select id="bg-color">
+                <option value="linear-gradient(135deg, #6cd0dd, #95c0ff)">Blue</option>
+                <option value="linear-gradient(135deg, #a8e0a2, #d0f0c0)">Green</option>
+                <option value="linear-gradient(135deg, #fbc2eb, #a6c1ee)">Pink</option>
+                <option value="linear-gradient(135deg, #4e4e4e, #737373)">Gray</option>
+                <option value="linear-gradient(135deg, #1abc9c, #16a085)">Teal</option>
+            </select>
+        </div>
+
         <h1><img src ="{% static 'images/notes.png/' %}">Notes</h1>
         <button class="btn"><img src ="{% static 'images/edit.png/' %}">Create Notes</button>
         <div class="notes-container">
